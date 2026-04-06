@@ -119,20 +119,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .section_title {
-  font-weight: 900;
-  font-size: 45rem;
-  line-height: 140%;
-  text-align: center;
-  color: $color-black;
-  text-transform: uppercase;
-
-  .yellow {
-    color: $color-yellow;
-
-    @include media('md') {
-      display: block;
-    }
-  }
+  font-weight: 800;
+  font-size: 52rem;
+  line-height: 177%;
+  color: $color-white;
 
   @include media('md') {
     font-size: 26rem;
@@ -143,11 +133,11 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.section-box {
-  padding: 55rem 0;
+.section-top {
+  margin-top: 100rem;
 
   @include media('md') {
-    padding: 30rem 0;
+    margin-top: 30rem;
   }
 }
 
