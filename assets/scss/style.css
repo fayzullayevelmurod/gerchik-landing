@@ -510,16 +510,23 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   border: 1rem solid #000000;
-  border-radius: 10rem;
-  height: 55rem;
+  border-radius: 30rem;
+  height: 50rem;
   width: 100%;
+  background: #FFFFFF;
+}
+@media (max-width: 850px) {
+  .form-tel {
+    border-radius: 16rem;
+  }
 }
 .form-tel__btn {
   display: flex;
   align-items: center;
   background: transparent !important;
-  font-weight: 700;
-  font-size: 16rem;
+  font-weight: 400;
+  z-index: 1;
+  font-size: 14rem;
   line-height: 100%;
   color: #000000;
   flex-shrink: 0;
@@ -529,7 +536,6 @@ p, h1, h2, h3, h4, h5, h6 {
      -moz-user-select: none;
           user-select: none;
   position: relative;
-  z-index: 1;
 }
 @media (max-width: 850px) {
   .form-tel__btn {
@@ -571,7 +577,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 .form-tel__list {
-  max-height: 130rem;
+  max-height: 150rem;
   overflow-y: scroll;
   padding: 5rem 0;
   border: 1rem solid #7196E4;
@@ -1307,85 +1313,53 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .contact {
-  padding: 44rem 0;
+  padding: 60rem 0;
   overflow: hidden;
-  position: relative;
-}
-@media (max-width: 850px) {
-  .contact {
-    padding: 55rem 0;
-  }
-}
-.contact .container {
-  position: relative;
-}
-@media (max-width: 850px) {
-  .contact .container {
-    padding: 0 30rem;
-    position: static;
-  }
-}
-.contact_img {
-  position: absolute;
-  transform: rotate(72deg);
-  width: 580rem;
-}
-@media (max-width: 850px) {
-  .contact_img {
-    width: 300rem;
-  }
-}
-.contact .one {
-  left: -25%;
-  top: -120rem;
-}
-@media (max-width: 850px) {
-  .contact .one {
-    bottom: -136rem;
-    top: auto;
-    left: -80rem;
-  }
-}
-.contact .two {
-  right: -13%;
-  top: -120rem;
-}
-@media (max-width: 850px) {
-  .contact .two {
-    right: 0;
-  }
+  overflow: hidden;
 }
 .contact_in {
+  background: linear-gradient(0deg, #01011f 0%, #37377d 100%);
   border-radius: 16rem;
-  background: #FFFFFF;
-  padding: 40rem 70rem;
-  box-shadow: 0px 0px 10px 0px #AFAFAF;
-  max-width: 750rem;
-  margin: auto;
-  position: relative;
-  z-index: 2;
+  border: 1rem solid #FFFFFF;
+  padding: 20rem 30rem 40rem 30rem;
 }
 @media (max-width: 850px) {
   .contact_in {
-    padding: 10rem;
+    padding: 16rem 10rem 24rem 10rem;
   }
 }
 .contact .section_title {
-  margin-bottom: 24rem;
+  font-weight: 900;
+  font-size: 40rem;
+  line-height: 170%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
 }
 @media (max-width: 850px) {
   .contact .section_title {
-    margin-bottom: 12rem;
+    font-size: 20rem;
   }
 }
-.contact .section_title span {
-  display: inline;
+.contact p {
+  font-weight: 400;
+  font-size: 20rem;
+  line-height: 138%;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 780rem;
+  margin: 12rem auto 24rem auto;
 }
-.contact .section_title .yellow {
-  color: #f9c645;
+@media (max-width: 850px) {
+  .contact p {
+    max-width: 500rem;
+    font-size: 12rem;
+    margin: 10rem auto 16rem auto;
+  }
 }
-.contact .section_title .red {
-  color: #d5282c;
+.contact form {
+  max-width: 530rem;
+  margin: auto;
 }
 .contact form .form_in {
   display: flex;
@@ -1395,43 +1369,29 @@ p, h1, h2, h3, h4, h5, h6 {
 .contact form input {
   width: 100%;
   border: 1rem solid #000000;
-  border-radius: 10rem;
+  border-radius: 30rem;
   padding: 10rem 20rem;
   font-weight: 400;
-  font-size: 16rem;
+  font-size: 14rem;
   color: #000000;
-  height: 55rem;
+  height: 50rem;
+  background: #FFFFFF;
 }
 @media (max-width: 850px) {
   .contact form input {
     font-size: 14rem;
+    border-radius: 16rem;
   }
 }
-.contact form .green_btn {
+.contact form .red_btn {
   padding: 10rem 20rem;
   width: 100%;
   flex-shrink: 0;
   height: 55rem;
-  border-radius: 12rem;
+  border-radius: 30rem;
 }
 @media (max-width: 850px) {
-  .contact form .green_btn {
-    width: 100%;
+  .contact form .red_btn {
+    border-radius: 16rem;
   }
-}
-.contact form .custom-checkbox {
-  display: flex;
-  align-items: center;
-  gap: 12rem;
-  cursor: pointer;
-  margin-top: 24rem;
-}
-@media (max-width: 850px) {
-  .contact form .custom-checkbox {
-    gap: 8rem;
-    margin-top: 12rem;
-  }
-}
-.contact form .custom-checkbox input {
-  display: none;
 }/*# sourceMappingURL=style.css.map */

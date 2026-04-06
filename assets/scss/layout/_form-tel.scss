@@ -3,16 +3,22 @@
     display: flex;
     align-items: center;
     border: 1rem solid $color-black;
-    border-radius: 10rem;
-    height: 55rem;
+    border-radius: 30rem;
+    height: 50rem;
     width: 100%;
+    background: $color-white;
+
+    @include media('md') {
+        border-radius: 16rem;
+    }
 
     &__btn {
         display: flex;
         align-items: center;
         background: transparent !important;
-        font-weight: 700;
-        font-size: 16rem;
+        font-weight: 400;
+        z-index: 1;
+        font-size: 14rem;
         line-height: 100%;
         color: $color-black;
         flex-shrink: 0;
@@ -20,7 +26,6 @@
         cursor: pointer;
         user-select: none;
         position: relative;
-        z-index: 1;
 
         @include media('md') {
             font-size: 14rem;
@@ -64,7 +69,7 @@
     }
 
     &__list {
-        max-height: 130rem;
+        max-height: 150rem;
         overflow-y: scroll;
         padding: 5rem 0;
         border: 1rem solid #7196E4;
