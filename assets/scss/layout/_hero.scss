@@ -2,6 +2,10 @@
 .hero {
   padding: 24rem 0 50rem 0;
 
+  @include media('md') {
+    padding: 24rem 0;
+  }
+
   .container {
     display: flex;
     gap: 50rem;
