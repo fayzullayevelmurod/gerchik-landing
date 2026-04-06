@@ -874,6 +874,60 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.step span {
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 16rem 30rem;
+  border-radius: 30rem;
+  border: 1rem solid #FFFFFF;
+}
+@media (max-width: 850px) {
+  .step span {
+    font-size: 12rem;
+    padding: 10rem 16rem;
+  }
+}
+.step .section_title {
+  margin: 5rem 0;
+}
+@media (max-width: 850px) {
+  .step .section_title {
+    font-size: 36rem;
+  }
+}
+.step p {
+  font-weight: 500;
+  font-size: 20rem;
+  line-height: 161%;
+  color: #FFFFFF;
+  max-width: 700rem;
+  margin-bottom: 32rem;
+}
+@media (max-width: 850px) {
+  .step p {
+    font-size: 12rem;
+  }
+}
+.step img {
+  width: 100%;
+}
+@media (max-width: 850px) {
+  .step .step_desktop {
+    display: none;
+  }
+}
+.step .step_mobile {
+  display: none;
+}
+@media (max-width: 850px) {
+  .step .step_mobile {
+    display: block;
+  }
+}
+
 .course_in {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
