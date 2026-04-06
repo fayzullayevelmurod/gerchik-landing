@@ -1,0 +1,14 @@
+@import
+    './vendors/normalize',
+    './abstracts/variables',
+    './abstracts/media',
+    './base/globals';
+
+@import
+    './layout/form-tel',
+    './layout/hero',
+    './layout/course',
+    './layout/work',
+    './layout/user',
+    './layout/faq',
+    './layout/contact';

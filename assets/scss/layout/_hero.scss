@@ -1,0 +1,150 @@
+// hero
+.hero {
+  padding: 24rem 0 50rem 0;
+
+  .container {
+    display: flex;
+    gap: 50rem;
+
+    @include media('md') {
+      flex-direction: column;
+      gap: 16rem;
+    }
+  }
+
+  .mini_title {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    padding: 8rem 18rem;
+    border-radius: 10rem;
+    background: #212121;
+    border: 1px solid #2d2d2d;
+    width: max-content;
+
+    @include media('md') {
+      padding: 3rem 10rem 3rem 3rem;
+    }
+
+    img {
+      width: 24rem;
+      height: 36rem;
+      display: flex;
+      flex-shrink: 0;
+    }
+
+    span {
+      font-weight: 800;
+      font-size: 18rem;
+      line-height: 170%;
+      color: #eff0f0;
+
+      @include media('md') {
+        font-size: 12rem;
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 900;
+    font-size: 60rem;
+    line-height: 135%;
+    text-transform: uppercase;
+    color: $color-white-f4;
+    max-width: 550rem;
+    margin: 16rem 0;
+
+    @include media('md') {
+      max-width: 100%;
+      font-size: 36rem;
+      margin: 6rem 0;
+    }
+
+    span {
+      color: $color-yellow-2;
+    }
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 20rem;
+    line-height: 160%;
+    color: $color-white;
+    max-width: 560rem;
+
+    @include media('md') {
+      max-width: 100%;
+      font-size: 12rem;
+    }
+  }
+
+  .red_btn {
+    margin: 24rem 0;
+
+    @include media('md') {
+      margin: 16rem 0;
+    }
+  }
+
+  &_blocks {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16rem;
+    max-width: 600rem;
+
+    @include media('md') {
+      grid-template-columns: repeat(1,1fr);
+      gap: 10rem;
+      max-width: 100%;
+    }
+  }
+
+  &_block {
+    border: 1rem solid rgba(255, 255, 255,.6);
+    padding: 16rem;
+    border-radius: 16rem;
+
+    @include media('xs') {
+      padding: 12rem;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 14rem;
+      line-height: 151%;
+      color: $color-white;
+
+      @include media('xs') {
+        font-size: 12rem;
+      }
+
+      span {
+        font-weight: 700;
+        color: $color-yellow-2;
+      }
+    }
+  }
+
+  &_img {
+    border: 1rem solid $color-white;
+    width: 517rem;
+    border-radius: 16rem;
+    overflow: hidden;
+
+    @include media('md') {
+      width: 100%;
+      height: 600rem;
+    }
+
+    @include media('xs') {
+      height: 222rem;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+// hero
